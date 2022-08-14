@@ -1,0 +1,140 @@
+body {
+  background-color: black;
+  font-family: "Overpass", sans-serif;
+  max-width: 375px;
+  max-height: 100vh;
+  line-height: 1.5;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}
+
+.rating {
+  border-radius: 50%;
+  border: none;
+  padding: 15px 20px;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(215, 25%, 13%);
+  font-weight: 700;
+}
+
+.rating:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+.rating-screen {
+  display: block;
+  width: 80%;
+  height: 300px;
+  margin: 100px auto;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px 30px;
+  border-radius: 20px;
+}
+
+.thanks {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(215, 25%, 13%);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+}
+
+.attribution a {
+  color: hsl(217, 12%, 63%);
+}
+
+.star {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(215, 25%, 13%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#your-rating {
+  text-align: center;
+}
+
+#ranking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#submit {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+#submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+#thankyou {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 400px) {
+  .rating-screen {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px 30px;
+    border-radius: 20px;
+  }
+
+  body {
+    display: block;
+    margin: 150px auto 0px auto;
+    height: 500px;
+  }
+
+  .attribution {
+    margin-top: 20px;
+  }
+}
